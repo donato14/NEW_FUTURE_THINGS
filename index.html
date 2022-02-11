@@ -9,6 +9,13 @@
   <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- 부트스트랩 합치기전에 삭제 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
@@ -29,6 +36,7 @@
       <div class="ad_button" id="third"></div>
     </div>
     <hr />
+
     <div class="NFT_action_title">
       <h2>2월 오늘의 경매</h2><span class="action_tag">진행중</span><span class="action_timelimit">11:03:01</span>
     </div>
@@ -41,6 +49,103 @@
       <div class="ad_content_button" id="sixth"></div>
       <div class="ad_content_button" id="seventh"></div>
     </div>
+    <div class="NFT_action_desc">
+      <article class="desc">
+        <h1 class="title_section">상품명</h1>
+        <h2 class="product_title">강규준이 찍은 풍경 사진 NFT</h2>
+        <h3 class="desc_section">상품 설명</h3>
+        <p class="product_desc">강규준이 직접 여행하며 찍은 사진 중 판매한다면 <strong>“이건 팔리지 않을까"</strong> 싶은 엄선된 사진 10선 중 5점</p>
+        <p class="product_detail">촬영 기기 : iPhone XS Max / 26mm / ISO250 / f1.8 / 12MP<br />
+          파일 포맷 : JPEG / 3024 x 4032 / 2.3MB<br />
+          촬영 장소 : 프라하 구시가지<br />
+          감정가 : <strong>50,000</strong> 원</p>
+      </article>
+      <button class="more_detail" data-toggle="tooltip" title="NFT 제품은 상세보기가 지원되지 않습니다.">상세보기</button>
+    </div>
+    <div class="NTF_in_action">
+      <h2>현재 경매 상황</h2>
+      <input type="text" name="text_price" id="text_price" placeholder="현재 입찰가" disabled />
+      <input type="text" name="ask_price" id="ask_price" placeholder="호가" disabled />
+      <br />
+      <input type="text" name="text_price" id="text_price" placeholder="200,000" disabled />
+      <input type="text" name="ask_price" id="ask_price" placeholder="10,000" disabled />
+      <form action="" method="post" class="in_action">
+        <input type="text" name="text_price" id="text_price" placeholder="희망 입찰가" />
+        <input type="submit" value="입찰하기">
+      </form>
+    </div>
+    <div class="NFT_board">
+      <h3>자주하는 질문</h3>
+      <table>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성부서</th>
+          <th>등록일</th>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>프로젝트를 안할 수 있는 방법은 취업</td>
+          <td>CS부</td>
+          <td>2022-02-07</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>프론트엔드 살려</td>
+          <td>강규준</td>
+          <td>2022-02-07</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>경매 진행 시간은 어떻게 되나요?</td>
+          <td>CS부</td>
+          <td>2022-02-07</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>남은 시간이 끝나도 입찰 할 수 있나요?</td>
+          <td>CS부</td>
+          <td>2022-02-07</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>입찰에 실패하면 어떻게되나요?</td>
+          <td>CS부</td>
+          <td>2022-02-06</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>하루에 몇 건의 경매가 진행되나요?</td>
+          <td>CS부</td>
+          <td>2022-02-05</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>인증서가 따로 존재하나요?</td>
+          <td>CS부</td>
+          <td>2022-02-04</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>낙찰 받은 상품은 어떻게 수령하나요?</td>
+          <td>CS부</td>
+          <td>2022-02-03</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>결제는 어떻게 하나요?</td>
+          <td>CS부</td>
+          <td>2022-02-02</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>NFT는 뭔가요?</td>
+          <td>CS부</td>
+          <td>2022-02-01</td>
+        </tr>
+      </table>
+    </div>
+
     <button class="to_top">△</button>
     <button class="to_bottom">▽</button>
   </section>
