@@ -250,13 +250,62 @@ strong {
   border: 1px solid #E0E2E7;
 }
 
+/* in_Action */
+.NTF_in_action {
+  margin-top: 100px;
+  width: 1140px;
+  padding-top: 25px;
+  padding-left: 80px;
+}
+
+.NTF_in_action input {
+  margin-left: 40px;
+}
+
+.input_text {
+  width: 265px;
+}
 
 /* NFT_Board */
 .NFT_board {
   width: 1140px;
-  height: 708px;
+  height: 500px;
   border: 1px solid #B2B3B9;
   margin-top: 70px;
+}
+
+.NFT_board > h3 {
+    padding-left: 80px;
+    padding-top: 25px;
+}
+
+.NFT_board_detail {
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid cornflowerblue;
+}
+
+.NFT_board_detail th {
+  text-align: center;
+  height: 35px;
+  border: 1px solid cornflowerblue;
+}
+
+.NFT_board_detail td {
+  height: 35px;
+  border: 1px solid cornflowerblue;
+}
+
+.NFT_board_detail td:nth-child(1) {
+  text-align: center;
+}
+
+.NFT_board_detail td:nth-child(3) {
+  text-align: center;
+}
+
+.NFT_board_detail td:nth-child(4) {
+  text-align: center;
 }
 
 
