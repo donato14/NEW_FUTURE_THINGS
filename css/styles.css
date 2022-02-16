@@ -36,16 +36,18 @@ section {
 
 .NFT_ad_tap {
   width: 1140px;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   border: 1px solid #B2B3B9;
   box-sizing: border-box;
   position: relative;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .ad_title {
+  color: #E0E2E7;
   font-size: 48px;
   font-weight: 900;
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
@@ -130,6 +132,20 @@ hr {
   height: 600px;
   border: 1px solid #B2B3B9;
   box-sizing: border-box;
+}
+
+.product_img {
+  width: 450px;
+  height: 600px;
+  margin: 0 auto;
+  padding-top: 25px;
+  overflow: hidden;
+}
+
+.pro_img {
+  width: 450px;
+  height: 550px;
+  border: 15px solid rgb(246, 215, 185);
 }
 
 .ad_content_button {
@@ -250,26 +266,56 @@ strong {
   border: 1px solid #E0E2E7;
 }
 
+.pay {
+  background-color: #8C2F39;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 60px;
+}
+
 /* in_Action */
 .NTF_in_action {
   margin-top: 100px;
   width: 1140px;
   padding-top: 25px;
   padding-left: 80px;
-}
-
-.NTF_in_action input {
-  margin-left: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .input_text {
-  width: 265px;
+  margin-left: 40px;
+}
+
+.input_text{
+  width: 230px;
+}
+
+.input_money {
+  width: 200px;
+}
+
+.input_money {
+  margin-right: 30px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.action_btn {
+  position: absolute;
+  right: 30px;
+  top: 86px;
 }
 
 /* NFT_Board */
 .NFT_board {
   width: 1140px;
-  height: 500px;
+  height: 560px;
   border: 1px solid #B2B3B9;
   margin-top: 70px;
 }
@@ -277,24 +323,18 @@ strong {
 .NFT_board > h3 {
     padding-left: 80px;
     padding-top: 25px;
-}
-
-.NFT_board_detail {
-  width: 900px;
-  margin: 0 auto;
-  border: 1px solid cornflowerblue;
+    padding-bottom: 20px;
 }
 
 .NFT_board_detail th {
   text-align: center;
   height: 35px;
-  border: 1px solid cornflowerblue;
 }
 
 .NFT_board_detail td {
   height: 35px;
-  border: 1px solid cornflowerblue;
 }
+
 
 .NFT_board_detail td:nth-child(1) {
   text-align: center;
@@ -336,4 +376,40 @@ strong {
   border-bottom-right-radius: 5px;
   color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+
+
+/* js css */
+
+.bannerOn {
+  display: inline;
+  /* opacity: 100;
+  transition: all 1s; */
+  animation-name: fadein;
+  animation-duration: 3000ms;
+}
+
+.bannerOff {
+  display: none;
+  /* opacity: 0; */
+  animation: fadeout;
+  animation-duration: 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
 }

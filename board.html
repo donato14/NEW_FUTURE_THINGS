@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/admin.css">
+  <link rel="stylesheet" href="./css/board.css">
+
+  <!-- 부트스트랩 합치기전에 삭제 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +29,7 @@
       <h2>QnA 게시판</h2>
     </div>
     <div class="NFT_board">
-      <table class="NFT_board_detail">
+      <table class="NFT_board_customer table table-bordered" style="width: 900px; margin: 0 auto;">
         <tr>
           <th>번호</th>
           <th>제목</th>
@@ -91,6 +97,10 @@
           <td>2022-02-01</td>
         </tr>
       </table>
+      <div class=" board_btn_ad">
+        <button class=" add_board_ad">작성하기</button>
+        <button class="add_board_ad">수정하기</button>
+      </div>
     </div>
   </section>
 
