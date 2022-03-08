@@ -1,3 +1,13 @@
 .NFT_board {
   padding-top: 60px;
 }
+
+.logohref {
+  text-decoration: none;
+  color:#461220;
+}
+
+.logohref:hover {
+  text-decoration: none;
+  color: #461220;
+}

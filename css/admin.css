@@ -27,3 +27,164 @@
   padding: 4px 15px;
   margin-top: 10px;
 }
+
+.add_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.add_image {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.image_container {
+  width: 400px;
+  height: 400px;
+  margin: 15px auto;
+}
+
+#preview-image {
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+}
+
+
+.prod_insert {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+
+.action_date {
+  width: 450px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.prod_name {
+  width: 450px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.prod_desc {
+  width: 450px;
+  height: 190px;
+  margin-top: 10px;
+}
+
+.prod_detail {
+  width: 450px;
+  height: 190px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#action_date {
+  border: 1px solid #B2B3B9;
+  border-radius: 4px;
+  margin-left: 15px;
+  width: 370px;
+}
+
+#prod_name {
+  border: 1px solid #B2B3B9;
+  border-radius: 4px;
+  margin-left: 15px;
+  width: 370px;
+}
+
+#prod_desc {
+  border: 1px solid #B2B3B9;
+  border-radius: 4px;
+  width: 438px;
+  height: 170px;
+  resize: none;
+}
+
+#prod_detail {
+  border: 1px solid #B2B3B9;
+  border-radius: 4px;
+  width: 438px;
+  height: 160px;
+  resize: none;
+}
+
+
+
+.popup {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 60vw;
+  height: 70vh;
+  background-color: #fff;
+  overflow: auto;
+  border: 1px solid #ADADAD;
+  overflow-x: hidden;
+}
+
+.modal {
+  display: none;
+}
+
+.body_scroll {
+  overflow: hidden;
+}
+
+.card_item {
+	cursor: pointer;
+}
+
+.modal-title {
+  width: inherit;
+  height: 70px;
+  background-color: #461220;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal-title > p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  margin-top: 10px;
+}
+
+.nftboardnum {
+  margin-left: 40px;
+  width: 50px;
+}
+
+.nftboardtitle {
+  max-width: 900px;
+  min-width: 900px;
+}
+
+.card-list {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.card-desc {
+  height: 130px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+}
+
+.modal_notice2 {
+  font-weight: 900;
+  margin-top: 5px;
+}

@@ -29,7 +29,33 @@
     </div>
     <div class="NFT_action_add">
       <div class="add_section">
-
+        <div class="add_image">
+          <div class="image-container">
+            <img id="preview-image" src="https://dummyimage.com/500x500/ffffff/000000.png&text=preview+image">
+            <form action="#" method="post" class="image_add">
+              <input type="file" id="input-image">
+              <input class="pay" type="submit" value="등록하기">
+          </div>
+        </div>
+        <div class="prod_insert">
+          <div class="action_date">
+            <label for="action_date">경매날짜</label>
+            <input type="date" id="action_date" />
+          </div>
+          <div class="prod_name">
+            <label for="prod_name">상품이름</label>
+            <input type="text" id="prod_name" />
+          </div>
+          <div class="prod_desc">
+            <label for="prod_desc">상품설명</label><br />
+            <textarea id="prod_desc"></textarea>
+          </div>
+          <div class="prod_detail">
+            <label for="prod_detail">상품상세</label><br />
+            <textarea id="prod_detail"></textarea>
+          </div>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -98,7 +124,7 @@
         </tr>
         <tr>
           <td>1</td>
-          <td>NFT는 뭔가요?</td>
+          <td class="card_item"> NFT는 뭔가요? </td>
           <td>CS부</td>
           <td>2022-02-01</td>
         </tr>
@@ -110,9 +136,98 @@
     </div>
     </div>
 
+    <div class="modal">
+      <div class="modal-title">
+        <p class="nftboardnum">1</p>
+        <p class="nftboardtitle">NFT는 뭔가요</p>
+        <p class="nftboarddate">2022-01-01</p>
+      </div>
+      <div class="card-list">
+        <small class="modal_notice">ESC 버튼을 누르면 창이 종료됩니다.</small>
+        <div class="card-desc">
+          <p>대체 불가능 토큰(Non-fungible token, NFT)이란 블록체인 기술을 이용해서 디지털 자산의 소유주를 증명하는 가상의 토큰(token)으로, 그림·영상 등의 디지털 파일이나 자산에
+            복제 및 위조가 불가능한 암호를 증명서로 붙임으로써 그 고유한 원본성 및 소유권을 나타내는 용도로 사용됩니다.
+            즉, 일종의 가상 진품 증명서인거죠!
+
+            디지털 자산을 NFT 토큰으로 만드는 것을 '민팅(Minting)'이라 표현하는데, 토큰(token)이 '대안화폐'를 의미하는 것에 착안해 역시 '화폐를 주조한다'는 뜻을 지닌 영단어를 사용하는
+            것 입니다.</p>
+        </div>
+        <div class="card-img">
+          <img src="./assets/Nyan cat.gif" alt="NFT예시">
+          <p class="modal_notice2">약 6억원에 낙찰된 Nayn Cat NFT</p>
+        </div>
+      </div>
+    </div>
+
+
     <button class=" to_top">△</button>
     <button class="to_bottom">▽</button>
   </section>
+  <script>
+    function readImage(input) {
+      // 인풋 태그에 파일이 있는 경우
+      if (input.files && input.files[0]) {
+        // 이미지 파일인지 검사 (생략)
+        // FileReader 인스턴스 생성
+        const reader = new FileReader()
+        // 이미지가 로드가 된 경우
+        reader.onload = e => {
+          const previewImage = document.getElementById("preview-image")
+          previewImage.src = e.target.result
+        }
+        // reader가 이미지 읽도록 하기
+        reader.readAsDataURL(input.files[0])
+      }
+    }
+    // input file에 change 이벤트 부여
+    const inputImage = document.getElementById("input-image")
+    inputImage.addEventListener("change", e => {
+      readImage(e.target)
+    })
+
+    // 화살표 함수 정의 => 현재 화면에서 전체화면의 좌표 0,0 으로 이동한다.
+    const scrollMove = (e) => {
+      window.scrollTo(0, 0);
+    }
+    // 화살표 함수 정의 => 현재 화면에서 전체화면의 좌표 0,9999 으로 이동한다.
+    const scrollMoveDown = (e) => {
+      window.scrollTo(0, 9999);
+    }
+    // to_top 클래스에 클릭 이벤트를 설정하고 스크롤 이벤트 적용
+    const to_top = document.querySelector('.to_top');
+    to_top.addEventListener('click', scrollMove);
+    // to_bottom 클래스에 클릭 이벤트를 설정하고 스크롤 이벤트 적용
+    const to_bottom = document.querySelector('.to_bottom');
+    to_bottom.addEventListener('click', scrollMoveDown);
+
+
+
+
+
+    const $card_item = document.querySelector('.card_item')
+    const $modal = document.querySelector('.modal');
+    const $body = document.querySelector('body');
+
+
+    $card_item.addEventListener('click', () => {
+      $modal.classList.remove('modal');
+      $modal.classList.add('popup');
+      $body.classList.add('body_scroll');
+    });
+
+
+    (function () {
+      document.addEventListener('keydown', function (e) {
+        const keyCode = e.keyCode;
+
+        if (keyCode == 27) { // Esc key
+          $modal.classList.add('modal');
+          $modal.classList.remove('popup');
+          $body.classList.remove('body_scroll');
+        }
+      })
+    })();
+  </script>
 </body>
 
 </html>
